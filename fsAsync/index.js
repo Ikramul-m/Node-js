@@ -8,3 +8,7 @@ fs.writeFile("read.txt", "today is awesome day :)", (err) => {
 fs.appendFile("read.txt", "\nsupport me plzz!!!", (err) => {
   console.log("tak complete");
 });
+
+fs.readFile("read.txt", "utf-8", (err, data) => {
+  console.log(data);
+});
