@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-// fs.mkdirSync('Thapa')
+fs.mkdirSync("Thapa"); // for creating the Folder named Thapa
 
 fs.writeFileSync(
   "Bio.txt",
@@ -9,10 +9,13 @@ fs.writeFileSync(
 
 fs.appendFileSync("Bio.txt", "\nHe is very helpfull");
 
-const data = fs.readFileSync("Bio.txt","utf8"); // utf8 without Buffer
+const data = fs.readFileSync("Bio.txt", "utf8"); // utf8 without Buffer
 console.log(data);
 
-fs.renameSync("Bio.txt","Biodata.txt") // Rename th txt file from Bio to Biodata
+fs.renameSync("Bio.txt", "Biodata.txt"); // Rename th txt file from Bio to Biodata
 
-fs.unlinkSync("./Biodata.txt") // Delete the txt file
+fs.unlinkSync("./Biodata.txt"); // Delete the txt file
+
+fs.rmdirSync("Thapa"); // Delete the folder named Thapa
+
 
