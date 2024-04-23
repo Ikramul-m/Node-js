@@ -9,5 +9,5 @@ fs.writeFileSync(
 
 fs.appendFileSync("Bio.txt", "\nHe is very helpfull");
 
-const data = fs.readFileSync("Bio.txt","utf8");
+const data = fs.readFileSync("Bio.txt","utf8"); // utf8 without Buffer
 console.log(data);
