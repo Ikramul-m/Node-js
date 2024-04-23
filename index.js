@@ -1,9 +1,4 @@
-const amount = 9;
+const fs  = require("fs")
 
-if (amount < 10) {
-  console.log("Small number!!!");
-} else {
-  console.log("Large number!!!");
-}
-
-console.log(`hey! it's my first node app...`);
+fs.writeFileSync("read.txt","Wlecome to my channel Ikram Technical")
+fs.writeFileSync("hello.py","print()")
