@@ -10,5 +10,6 @@ fs.appendFile("read.txt", "\nsupport me plzz!!!", (err) => {
 });
 
 fs.readFile("read.txt", "utf-8", (err, data) => {
+  // for reading the file
   console.log(data);
 });
