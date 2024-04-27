@@ -1,4 +1,4 @@
-const oper = require("./open");
+const {add,sub} = require("./open");
 
-console.log(oper.add(5,5))
-console.log(oper.sub(5,5))
+console.log(add(5,5))
+console.log(sub(5,5))
