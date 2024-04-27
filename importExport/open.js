@@ -10,5 +10,6 @@ const mul = (a, b) => {
   return a * b;
 };
 
+const name = "Ikramul Haque";
 
-module.exports = { add, sub, mul };
+module.exports = { add, sub, mul, name };
