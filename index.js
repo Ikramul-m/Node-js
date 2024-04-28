@@ -1,10 +1,5 @@
-const fs = require("fs");
+const path = require("path")
 
-const a = "Hi everyone!";
-const b = "\nHow are you";
+const a = path.extname('C:\ Users\ ikram\ Desktop\ Lessons\ Nodejs \ index.js')
 
-fs.writeFile("./Sample.txt", a + b, () => {
-  console.log("written");
-});
-
-console.log("I am first");
+console.log(a)
