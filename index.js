@@ -1,1 +1,3 @@
-console.log("Hello World!!!")
+const a = 400
+
+module.exports = a
