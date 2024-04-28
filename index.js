@@ -1,10 +1,12 @@
-const fs = require('fs')
+const fs = require("fs");
 
-fs.readFileSync('Sample.txt','utf-8',(err,data) => {
-    if(err) {
-        throw err
-    }
-    console.log(data)
-})
+const a = fs.readFileSync("Sample.txt", "utf-8", (err, data) => {
+  if (err) {
+    throw err;
+  }
+  console.log(data);
+});
 
-console.log('I am first')
+console.log(a);
+
+console.log("I am first");
