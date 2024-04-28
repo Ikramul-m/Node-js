@@ -1,11 +1,8 @@
-const a = {
-  average: (a, b) => {
-    console.log((a + b) / 2);
-  },
+const fs = require('fs')
 
-  percent: (a, b) => {
-    console.log((a / b) * 100);
-  },
-};
-
-module.exports = a;
+fs.readFile('Sample.txt','utf-8',(err,data) => {
+    if(err) {
+        throw err
+    }
+    console.log(data)
+})
