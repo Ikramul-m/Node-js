@@ -13,4 +13,12 @@
 // // console.log(pokemon.all());
 // console.log(pokemon.random());
 
+const htpp = require('http')
 
+const server = htpp.createServer((request,response) => {
+    response.end("working...")
+})
+
+server.listen(4000,'localhost',() => {
+    console.log('Server is working on http://localhost:4000')
+})
