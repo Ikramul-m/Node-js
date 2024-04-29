@@ -4,7 +4,18 @@ const PORT = 4000;
 const hostName = "localhost";
 
 const server = http.createServer((request, response) => {
-  response.end("<h1>Hello world!!!</h1>");
+  if (request.url === "/") {
+    response.end("Home page");
+  }
+  else if (request.url === "/about") {
+    response.end("About Page");
+  }
+  else if (request.url === "/contact") {
+    response.end("Contact Page");
+  } 
+  else {
+    response.end(" <h1>404 Page not found</h1> ");
+  }
 });
 
 server.listen(PORT, hostName, () => {
