@@ -8,5 +8,5 @@ const server = http.createServer((request, response) => {
 });
 
 server.listen(PORT, hostName, () => {
-  console.log("Server is working on http://localhost:4000");
+  console.log(`Server is working on http://${hostName}:${PORT}`);
 });
