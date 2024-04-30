@@ -5,16 +5,13 @@ const hostName = "localhost";
 
 const server = http.createServer((request, response) => {
   if (request.url === "/") {
-    response.end("Home page");
-  }
-  else if (request.url === "/about") {
-    response.end("About Page");
-  }
-  else if (request.url === "/contact") {
-    response.end("Contact Page");
-  } 
-  else {
-    response.end(" <h1>404 Page not found</h1> ");
+    response.end("<h1>Home Page</h1>");
+  } else if (request.url === "/contact") {
+    response.end("<h1>Contact</h1>");
+  } else if (request.url === "/about") {
+    response.end("<h1>About</h1>");
+  } else {
+    response.end("<h1>404 Page not found</h1>");
   }
 });
 
