@@ -8,13 +8,13 @@ const home = fs.readFileSync("./index.html", "utf-8");
 
 const server = http.createServer((request, response) => {
   if (request.url === "/") {
-    response.end(home);
+    return response.end(home);
   } else if (request.url === "/contact") {
-    response.end("<h1>Contact</h1>");
+    return response.end("<h1>Contact</h1>");
   } else if (request.url === "/about") {
-    response.end("<h1>About</h1>");
+    return response.end("<h1>About</h1>");
   } else {
-    response.end("<h1>404 Page not found</h1>");
+    return response.end("<h1>404 Page not found</h1>");
   }
 });
 
